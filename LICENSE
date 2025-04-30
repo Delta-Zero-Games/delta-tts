@@ -1,0 +1,66 @@
+# DELTA-TTS LICENSE
+# Version 1.0, 2025-04-30
+
+## ATTRIBUTION
+
+This software, Delta-TTS, is a derivative work based on Index-TTS, which was originally 
+developed by bilibili (https://github.com/index-tts/index-tts). The original work is 
+subject to the licenses contained in the files INDEX_MODEL_LICENSE, DISCLAIMER, and INDEX_TTS_LICENSE 
+within this repository.
+
+Original work copyright © 2025 bilibili
+Modifications copyright © 2025 Delta Zero, LLC
+
+## TERMS AND CONDITIONS
+
+1. DEFINITIONS
+   "Software" refers to the modified version of Index-TTS, known as Delta-TTS, including all 
+   source code, documentation, and associated files contained in this repository.
+   "Original Work" refers to the Index-TTS software developed by bilibili.
+   "Licensor" refers to Delta Zero, LLC, the copyright holder of the modifications.
+   "You" refers to any individual or entity exercising the permissions granted by this License.
+
+2. GRANT OF RIGHTS
+   Subject to the terms and conditions of this License, the Licensor hereby grants You a 
+   worldwide, non-exclusive, non-transferable license to use the Software under the following 
+   conditions:
+
+   a. Non-Commercial Use:
+      You may use, modify, and distribute the Software for non-commercial purposes, provided 
+      that all copyright notices, disclaimers, and attributions are preserved.
+
+   b. Commercial Use:
+      Commercial use of the Software requires a separate written agreement with the Licensor. 
+      Please contact deltazeroproduction@gmail.com for commercial licensing inquiries.
+
+3. RESTRICTIONS
+   a. You may not use the Software in any way that violates the restrictions in the original 
+      INDEX_MODEL_LICENSE or DISCLAIMER.
+   b. You may not use the Software to impersonate real persons without their explicit consent.
+   c. You may not use the Software for any illegal, harmful, or malicious purposes.
+   d. You may not remove or alter any copyright notices, attributions, or disclaimers from the Software.
+
+4. DISCLAIMER OF WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+   INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+   PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE 
+   FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR 
+   OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+   DEALINGS IN THE SOFTWARE.
+
+5. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL THE LICENSOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL 
+   DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN 
+   ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH 
+   THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+6. COMPLIANCE WITH ORIGINAL LICENSES
+   This License does not supersede the requirements of the original licenses applicable to the 
+   Original Work. You must comply with all terms of the original licenses in addition to the 
+   terms of this License.
+
+7. TERMINATION
+   This License will terminate automatically if You fail to comply with any of its terms.
+
+For inquiries regarding commercial use or other licensing questions, please contact:
+deltazeroproduction@gmail.com
