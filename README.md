@@ -26,12 +26,12 @@ Delta-TTS is a controllable and efficient zero-shot text-to-speech (TTS) system 
 ## Usage
 Run TTS inference from the command line:
 ```bash
-python -m indextts.infer --text "Your text here" --audio_prompt path/to/input.wav --output_path out.wav
+python -m dzptts.infer --text "Your text here" --audio_prompt path/to/input.wav --output_path out.wav
 ```
 
 Or use the Python API:
 ```python
-from indextts.infer import IndexTTS
+from dzptts.infer import IndexTTS
 
 tts = IndexTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints")
 tts.infer(audio_prompt="input.wav", text="Hello world!", output_path="out.wav")
