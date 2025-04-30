@@ -3,14 +3,14 @@ import platform
 from setuptools import find_packages, setup
 
 setup(
-    name="indextts",
-    version="0.1.1",
-    author="Index SpeechTeam",
-    author_email="xuanwu@bilibili.com",
+    name="delta-tts",
+    version="0.0.1",
+    author="BrokenHypocrite",
+    author_email="brokenhypocrite@gmail.com",
     long_description=open("README.md", encoding="utf8").read(),
     long_description_content_type="text/markdown",
-    description="An Industrial-Level Controllable and Efficient Zero-Shot Text-To-Speech System",
-    url="https://github.com/index-tts/index-tts",
+    description="Controllable and Efficient Zero-Shot Text-To-Speech System based on IndexTTS",
+    url="https://github.com/Delta-Zero-Games/delta-tts",
     packages=find_packages(),
     include_package_data=True,
     install_requires=[
@@ -32,12 +32,12 @@ setup(
             "indextts = indextts.cli:main",
         ]
     },
-    license="Apache-2.0",
+    license="DELTA-TTS License",
     python_requires=">=3.10",
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
-        "License :: OSI Approved :: Apache Software License",
+        "License :: Other/Proprietary License",
         "Intended Audience :: Science/Research",
         "Topic :: Scientific/Engineering",
         "Topic :: Scientific/Engineering :: Artificial Intelligence",
