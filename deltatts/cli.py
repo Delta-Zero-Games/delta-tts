@@ -6,7 +6,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 warnings.filterwarnings("ignore", category=FutureWarning)
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="dzpTTS Command Line")
+    parser = argparse.ArgumentParser(description="deltaTTS Command Line")
     parser.add_argument("text", type=str, help="Text to be synthesized")
     parser.add_argument("-v", "--voice", type=str, required=True, help="Path to the audio prompt file (wav format)")
     parser.add_argument("-o", "--output_path", type=str, default="gen.wav", help="Path to the output wav file")
@@ -54,8 +54,8 @@ def main():
             args.fp16 = False # Disable FP16 on CPU
             print("WARNING: Running on CPU may be slow.")
 
-    from dzptts.infer import dzpTTS
-    tts = dzpTTS(cfg_path=args.config, model_dir=args.model_dir, is_fp16=args.fp16, device=args.device)
+    from deltatts.infer import deltaTTS
+    tts = deltaTTS(cfg_path=args.config, model_dir=args.model_dir, is_fp16=args.fp16, device=args.device)
     tts.infer(audio_prompt=args.voice, text=args.text.strip(), output_path=output_path)
 
 if __name__ == "__main__":

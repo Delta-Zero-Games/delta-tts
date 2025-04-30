@@ -15,12 +15,12 @@ from huggingface_hub import PyTorchModelHubMixin, hf_hub_download
 from torch.nn import Conv1d, ConvTranspose1d
 from torch.nn.utils import remove_weight_norm, weight_norm
 
-import dzptts.BigVGAN.activations as activations
-from dzptts.BigVGAN.alias_free_activation.torch.act import \
+import deltatts.BigVGAN.activations as activations
+from deltatts.BigVGAN.alias_free_activation.torch.act import \
     Activation1d as TorchActivation1d
-from dzptts.BigVGAN.ECAPA_TDNN import ECAPA_TDNN
-from dzptts.BigVGAN.env import AttrDict
-from dzptts.BigVGAN.utils import get_padding, init_weights
+from deltatts.BigVGAN.ECAPA_TDNN import ECAPA_TDNN
+from deltatts.BigVGAN.env import AttrDict
+from deltatts.BigVGAN.utils import get_padding, init_weights
 
 
 def load_hparams_from_json(path) -> AttrDict:

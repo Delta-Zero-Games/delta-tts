@@ -8,10 +8,10 @@ from transformers.modeling_outputs import CausalLMOutputWithCrossAttentions
 from transformers.utils.model_parallel_utils import (assert_device_map,
                                                      get_device_map)
 
-from dzptts.gpt.conformer_encoder import ConformerEncoder
-from dzptts.gpt.perceiver import PerceiverResampler
-from dzptts.utils.arch_util import AttentionBlock
-from dzptts.utils.typical_sampling import TypicalLogitsWarper
+from deltatts.gpt.conformer_encoder import ConformerEncoder
+from deltatts.gpt.perceiver import PerceiverResampler
+from deltatts.utils.arch_util import AttentionBlock
+from deltatts.utils.typical_sampling import TypicalLogitsWarper
 
 
 def null_position_embeddings(range, dim):

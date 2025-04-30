@@ -3,7 +3,7 @@ import math
 import torch
 import torch.nn as nn
 
-from dzptts.utils.xtransformers import RelativePositionBias
+from deltatts.utils.xtransformers import RelativePositionBias
 
 
 def zero_module(module):

@@ -17,15 +17,15 @@ import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 warnings.filterwarnings("ignore", category=UserWarning)
 
-from dzptts.BigVGAN.models import BigVGAN as Generator
-from dzptts.gpt.model import UnifiedVoice
-from dzptts.utils.checkpoint import load_checkpoint
-from dzptts.utils.feature_extractors import MelSpectrogramFeatures
+from deltatts.BigVGAN.models import BigVGAN as Generator
+from deltatts.gpt.model import UnifiedVoice
+from deltatts.utils.checkpoint import load_checkpoint
+from deltatts.utils.feature_extractors import MelSpectrogramFeatures
 
-from dzptts.utils.front import TextNormalizer, TextTokenizer
+from deltatts.utils.front import TextNormalizer, TextTokenizer
 
 
-class dzpTTS:
+class deltaTTS:
     def __init__(
         self, cfg_path="checkpoints/config.yaml", model_dir="checkpoints", is_fp16=True, device=None, use_cuda_kernel=None,
     ):
@@ -63,7 +63,7 @@ class dzpTTS:
         # Comment-off to load the VQ-VAE model for debugging tokenizer
         #   https://github.com/index-tts/index-tts/issues/34
         #
-        # from dzptts.vqvae.xtts_dvae import DiscreteVAE
+        # from deltatts.vqvae.xtts_dvae import DiscreteVAE
         # self.dvae = DiscreteVAE(**self.cfg.vqvae)
         # self.dvae_path = os.path.join(self.model_dir, self.cfg.dvae_checkpoint)
         # load_checkpoint(self.dvae, self.dvae_path)
@@ -98,7 +98,7 @@ class dzpTTS:
         if self.use_cuda_kernel:
             # preload the CUDA kernel for BigVGAN
             try:
-                from dzptts.BigVGAN.alias_free_activation.cuda import load
+                from deltatts.BigVGAN.alias_free_activation.cuda import load
 
                 anti_alias_activation_cuda = load.load()
                 print(">> Preload custom CUDA kernel for BigVGAN", anti_alias_activation_cuda)
@@ -555,5 +555,5 @@ if __name__ == "__main__":
     prompt_wav="test_data/input.wav"
     text="There is a vehicle arriving in dock number 7?"
 
-    tts = dzpTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", is_fp16=True, use_cuda_kernel=False)
+    tts = deltaTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", is_fp16=True, use_cuda_kernel=False)
     tts.infer(audio_prompt=prompt_wav, text=text, output_path="gen.wav", verbose=True)

@@ -1,7 +1,7 @@
 import torch
 import torchaudio
 from torch import nn
-from dzptts.utils.common import safe_log
+from deltatts.utils.common import safe_log
 
 
 class FeatureExtractor(nn.Module):

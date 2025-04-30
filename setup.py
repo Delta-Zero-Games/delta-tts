@@ -29,7 +29,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "dzptts = dzptts.cli:main",
+            "deltatts = deltatts.cli:main",
         ]
     },
     license="DELTA-TTS License",
