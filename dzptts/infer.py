@@ -25,7 +25,7 @@ from dzptts.utils.feature_extractors import MelSpectrogramFeatures
 from dzptts.utils.front import TextNormalizer, TextTokenizer
 
 
-class IndexTTS:
+class dzpTTS:
     def __init__(
         self, cfg_path="checkpoints/config.yaml", model_dir="checkpoints", is_fp16=True, device=None, use_cuda_kernel=None,
     ):
@@ -555,5 +555,5 @@ if __name__ == "__main__":
     prompt_wav="test_data/input.wav"
     text="There is a vehicle arriving in dock number 7?"
 
-    tts = IndexTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", is_fp16=True, use_cuda_kernel=False)
+    tts = dzpTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints", is_fp16=True, use_cuda_kernel=False)
     tts.infer(audio_prompt=prompt_wav, text=text, output_path="gen.wav", verbose=True)

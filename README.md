@@ -31,9 +31,9 @@ python -m dzptts.infer --text "Your text here" --audio_prompt path/to/input.wav 
 
 Or use the Python API:
 ```python
-from dzptts.infer import IndexTTS
+from dzptts.infer import dzpTTS
 
-tts = IndexTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints")
+tts = dzpTTS(cfg_path="checkpoints/config.yaml", model_dir="checkpoints")
 tts.infer(audio_prompt="input.wav", text="Hello world!", output_path="out.wav")
 ```
 
